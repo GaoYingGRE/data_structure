@@ -12,7 +12,7 @@ public:
 		height=b;
 		color=c;
 	}
-	int getArea(){
+	virtual int getArea(){
 		return width*height;
 	}
 	void printArea(){
@@ -29,9 +29,6 @@ public:
 	Triangle(int a=0, int b=0, int c=0):Shape(a,b,c){}
 	int getArea(){
 		return width*height/2;
-	}
-	void printArea(){
-		cout<<"the area is "<<getArea()<<endl;
 	}
 	/* data */
 };
